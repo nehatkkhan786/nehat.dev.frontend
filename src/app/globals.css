@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.HomeWrapper{
+  height: 100svh;
+  scroll-snap-type: y mandatory; 
+  scroll-behavior: smooth;
+  background:#202020;
+  color:#A9A9A9;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.MainSection{
+  height: 100svh;
+  background:#202020;
+  color:#A9A9A9;
+  scrollbar-width: none;
+  overflow: scroll;
+}
+.code{
+  position: relative;
+}
+.copy-icon{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+}
