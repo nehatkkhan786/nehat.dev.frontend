@@ -11,7 +11,7 @@ const BlogCard = ({blog}) => {
           <Typography sx={{fontSize:{xs:16, md:18}, fontWeight:'bold'}}> {blog?.title}</Typography>
           <Typography sx={{fontSize:{xs:12}}}>10 Days Ago</Typography>
       </Box>
-      <Box  sx={{display:'flex', justifyContent:'space-between'}}>
+      <Box  sx={{display:'flex', justifyContent:'space-between'}} style={{textDecoration:'none'}}>
         <Typography>Django</Typography>
         <Link href={`/blog/${blog?.id}`} state={blog}>
             <Button size='small'>Read More</Button>

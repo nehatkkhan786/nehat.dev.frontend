@@ -30,12 +30,12 @@ const BlogList = ({data}) => {
   
   return (
     <Container maxWidth='md' sx={{display:'flex', width:'100%', flexDirection:'column', alignItems:'center', mt:5, gap:4, pb:4,}}>
-      {blog?.map((item)=>{
+      {blog?.results?.map((item)=>{
         return (
             <BlogCard blog={item} key={item?.id} />
         )
       })}
-      {isNext && (
+      {data?.next != null && (
         <Button onClick={loadMoreData} variant='contained'>LOAD MORE</Button>
       )}
     </Container>

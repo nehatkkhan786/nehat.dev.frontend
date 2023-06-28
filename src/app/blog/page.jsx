@@ -10,7 +10,7 @@ import React from 'react'
 
 const fetchAllBlogs = async () =>{
   const {data} = await axios.get(`${BASE_URL}getAllBlogs/?page=1`) 
-  return (data?.results)
+  return (data)
 }
 
 const Blog = async () => {
