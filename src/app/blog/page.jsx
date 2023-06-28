@@ -1,6 +1,7 @@
 import BlogHeader from '@/components/clients/Blog/BlogHeader'
 import BlogList from '@/components/clients/Blog/BlogList'
 import Navbar from '@/components/clients/Navbar'
+import { BASE_URL } from '@/constants/utils'
 import axios from 'axios'
 import React from 'react'
 
@@ -8,7 +9,7 @@ import React from 'react'
 
 
 const fetchAllBlogs = async () =>{
-  const {data} = await axios.get('http://127.0.0.1:8000/api/getAllBlogs/?page=1') 
+  const {data} = await axios.get(`${BASE_URL}getAllBlogs/?page=1`) 
   return (data?.results)
 }
 
