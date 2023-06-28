@@ -27,6 +27,7 @@ import Link from "next/link";
     const [anchorElm, setAnchorElm] = useState(null);
     const [open, setOpen] = useState(false);
     const router = useRouter()
+    
   
     const handleClose = () => {
       setAnchorElm(null);
@@ -45,8 +46,8 @@ import Link from "next/link";
       <Container maxWidth="xl">
         <Box sx={{display: "flex",justifyContent: "space-between",paddingTop: 2,alignItems: "center",}}>
           {/* Logo */}
-           <Box onClick={()=>router.back()} sx={{width: { xs: 150, sm: 150, md: 200, lg: 200 }, height: { xs: 60, sm: 60, md: 80, lg: 80 },cursor: "pointer",}}>
-                    <Image  src={Logo1} layout='responsive' alt="Logo" priority={true}/>
+           <Box onClick={()=>router.push('/')} sx={{width: { xs: 150, sm: 150, md: 200, lg: 200 }, height: { xs: 60, sm: 60, md: 80, lg: 80 },cursor: "pointer",}}>
+                    <Image  src={Logo1}  alt="Logo" priority={true}  style={{width:'100%', height:'100%'}}/>
             </Box>
 
   
