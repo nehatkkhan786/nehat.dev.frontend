@@ -3,9 +3,9 @@
   padding: 0;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 
 /* .HomeWrapper{
@@ -24,19 +24,19 @@ html {
 body{
   height: 100svh;
   /* scroll-snap-type: y mandatory;  */
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   background:#202020;
   color:#A9A9A9;
   overflow-y: auto;
   scrollbar-width: none;
 }
-.MainSection{
+/* .MainSection{
   height: 100svh;
   background:#202020;
   color:#A9A9A9;
   scrollbar-width: none;
   overflow: scroll;
-}
+} */
 .code{
   position: relative;
 }

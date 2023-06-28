@@ -29,6 +29,10 @@ const MoveToTop = () => {
   };
 
   return (
+
+
+  
+
     <div
       className="move-up-icon-wrapper"
       style={{
@@ -37,10 +41,13 @@ const MoveToTop = () => {
       }}
       onClick={scrollToTopButton}
     >
-      <IconButton sx={{ position: "absolute", bottom: 20, right: 20 }}>
-        <KeyboardArrowUpIcon sx={{ fontSize: { xs: 40 } }} color="primary" />
-      </IconButton>
+      {showButton && (
+        <IconButton sx={{ position: "fixed", bottom: 20, right: 20 }}>
+          <KeyboardArrowUpIcon sx={{ fontSize: { xs: 40 } }} color="primary" />
+        </IconButton>
+      )}
     </div>
+
   );
 };
 
