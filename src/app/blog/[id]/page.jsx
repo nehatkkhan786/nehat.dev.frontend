@@ -1,10 +1,11 @@
 import BlogContent from '@/components/clients/Blog/BlogContent'
 import Navbar from '@/components/clients/Navbar'
+import { BASE_URL } from '@/constants/utils'
 import axios from 'axios'
 import React from 'react'
 
 const fetchBlogDetail = async (id) =>{
-  const {data} = await axios.get(`http://127.0.0.1:8000/api/getblog/${id}`) 
+  const {data} = await axios.get(`${BASE_URL}getblog/${id}`) 
   return (data)
 }
 
