@@ -4,6 +4,7 @@ import { BASE_URL } from '@/constants/utils'
 import axios from 'axios'
 import React from 'react'
 
+
 const fetchBlogDetail = async (id) =>{
   const {data} = await axios.get(`${BASE_URL}getblog/${id}`) 
   return (data)
