@@ -37,7 +37,7 @@ const Skills = () => {
             return (
               <Grid item key={item.id} >
                 <Box sx={{padding:2, border:'2px solid transparent', borderImage:'linear-gradient(to bottom right, #E95420, transparent 50%) 1',}}>
-                  <Box sx={{width:{xs:50, md:30, lg:120}, height:{xs:50, md:30, lg:120}}}> 
+                  <Box sx={{width:{xs:50, md:100, lg:120}, height:{xs:50, md:100, lg:120}}}> 
                     <Image src={item.icon} style={{objectFit:'cover', width:'100%', height:'100%'}} alt='item.name'/>
                   </Box>
                 </Box>
