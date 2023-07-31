@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'nehat.dev',
   description: 'nehat.dev',
-  icons:'/Logo1.webp'
+  icons:'/newlogo.png'
 }
 
 export default function RootLayout({ children }) {

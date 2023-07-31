@@ -11,6 +11,7 @@
     } from "@mui/material";
     import React, { useRef, useState } from "react";
     import Logo1 from "../../assets/white_transparent.webp";
+    import NewLogo from "../../assets/newlogo.png";
     import MenuOpenIcon from "@mui/icons-material/MenuOpen";
     import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
     import CloseIcon from "@mui/icons-material/Close";
@@ -46,8 +47,8 @@ import Link from "next/link";
       <Container maxWidth="xl">
         <Box sx={{display: "flex",justifyContent: "space-between",paddingTop: 2,alignItems: "center",}}>
           {/* Logo */}
-           <Box onClick={()=>router.push('/')} sx={{width: { xs: 150, sm: 150, md: 200, lg: 200 }, height: { xs: 60, sm: 60, md: 80, lg: 80 },cursor: "pointer",}}>
-                    <Image  src={Logo1}  alt="Logo" priority={true}  style={{width:'100%', height:'100%'}}/>
+           <Box onClick={()=>router.push('/')} sx={{width: { xs: 150, sm: 150, md: 200, lg: 200 }, height: { xs: 60, sm: 60, md: 100, lg: 100 },cursor: "pointer",}}>
+                    <Image  src={NewLogo}  alt="Logo" priority={true}  style={{width:'100%', height:'100%'}}/>
             </Box>
 
   
