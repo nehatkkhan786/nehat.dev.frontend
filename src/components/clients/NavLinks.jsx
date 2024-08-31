@@ -7,7 +7,7 @@ const links = [
   { id: 1, title: "About", path: "#about" },
   { id: 2, title: "Skills", path: "#skills" },
   { id: 3, title: "Projects", path: "#projects" },
-  { id: 4, title: "Blog", path: "/blog" },
+  // { id: 4, title: "Blog", path: "/blog" },
 ];
 
 const NavLinks = () => {
