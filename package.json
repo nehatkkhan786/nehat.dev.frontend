@@ -32,5 +32,9 @@
     "rehype-highlight": "^6.0.0",
     "swr": "^2.1.5",
     "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.5.1",
+    "typescript": "5.5.4"
   }
 }
